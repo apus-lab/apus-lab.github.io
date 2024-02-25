@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Reduced-Order Modeling of Hypersonic Aerothermodynamics | APUS Lab</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Reduced-Order Modeling of Hypersonic Aerothermodynamics" />
+<meta name="author" content="Daning Huang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Multi-Disciplinary Analysis, Optimization, and Control" />
+<meta property="og:description" content="Multi-Disciplinary Analysis, Optimization, and Control" />
+<link rel="canonical" href="http://localhost:4000/rsch_rom_scl/" />
+<meta property="og:url" content="http://localhost:4000/rsch_rom_scl/" />
+<meta property="og:site_name" content="APUS Lab" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-15T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Reduced-Order Modeling of Hypersonic Aerothermodynamics" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Daning Huang"},"dateModified":"2019-08-15T00:00:00-04:00","datePublished":"2019-08-15T00:00:00-04:00","description":"Multi-Disciplinary Analysis, Optimization, and Control","headline":"Reduced-Order Modeling of Hypersonic Aerothermodynamics","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/rsch_rom_scl/"},"url":"http://localhost:4000/rsch_rom_scl/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                APUS Lab
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/team/" class="navbar-item ">Team</a>
+                    
+                
+                    
+                    <a href="/news/" class="navbar-item ">News</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/research/" class="navbar-link ">Research</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/research/projects/" class="navbar-item ">All Projects</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/publications/" class="navbar-item ">Publications</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/courses/" class="navbar-link ">Resources</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/courses/" class="navbar-item ">Courses</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/joinus/" class="navbar-item ">Join Us!</a>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-small  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Reduced-Order Modeling of Hypersonic Aerothermodynamics</h1>
+            <p class="subtitle is-3"></p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+                    <div class="content">
+
+    <p>Published: Aug 15, 2019 by Daning Huang</p>
+
+    
+
+    <p><img src="/img/rsch_rom_str.png" align="right" width="500px" /></p>
+
+<p>A challenge in aerothermoelastic analysis hinges on the computational efficiency needed in the simulation while maintaining high fidelity. <strong>The conflict between the requirement of solution fidelity and the computational cost is resolved by utilizing a novel extrapolative reduced-order model (ROM) technique</strong> for accelerating the performance of the high-fidelity fluid solver.</p>
+
+<p>Like many other engineering problems, the fluid ROM employs an interpolation model that requires a “training” data set computed prior to the simulation. The interpolation model constructs new fluid solutions from the training data set of CFD-based fluid solutions for a range of presumed flow conditions.</p>
+
+<p><br clear="right" /></p>
+
+<p><img src="/img/rsch_rom_scl.png" align="left" width="500px" /></p>
+
+<p>The extrapolation capability of the ROM, which is absent in conventional interpolation models, is supplemented by a novel correction methodology. <strong>The correction methodology utilizes simple analytical models pertaining to the underlying flow physics to generalize the interpolation model so that the ROM can generate high-fidelity fluid solutions for the flow conditions beyond the training data set.</strong> The correction methodology vastly widens the applicability of the ROM. By using the ROM, the fluid solver is accelerated by five orders of magnitude, while maintaining the accuracy of a CFD solver. This enables rapid simulation of aerothermoelastic problems. Moreover, <strong>the ROM correction methodology is a general approach that can be applied to any other engineering problems that employ a ROM based on interpolation models.</strong></p>
+
+<p><br clear="left" /></p>
+
+<p><img src="/img/rsch_rom_acc.png" align="right" width="500px" /></p>
+
+<p>Enhanced by the ROM technique, <a href="/rsch_hypate">the framework for numerical aerothermoelastic analysis</a> <strong>is accelerated by four orders of magnitude</strong>. This enables the practical parametric study of the aerothermoelastic behavior of skin panels that sheds new light on the physical understanding of the complex interdisciplinary problem and motivates new design criteria for the hypersonic vehicle structures.</p>
+
+<p>For more technical details on the ROM technique and its application, as well as the access to the ROM code, please refer to our papers <a href="http://doi.org/10.2514/6.2017-1601">SciTech2017</a> and <a href="http://doi.org/10.2514/1.J057499">AIAAJ2019</a>.</p>
+
+<p><br clear="right" /></p>
+
+
+</div>
+
+<div class="tags">
+    
+</div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+        <div class="columns is-multiline">
+            
+        </div>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">© 2019-2023 | Built using the <a href="https://github.com/chrisrhymes/bulma-clean-theme">Bulma Clean Theme</a></p>
+        </div>
+    </div>
+</footer>
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>
