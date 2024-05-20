@@ -25,6 +25,8 @@ git push
 ```
 + In main repo push the changes.
 
+May need to prepend `bundle exec` to the `jekyll` commands to avoid package conflicts.
+
 For working with shared files from Google Drive.
 1. Enable access of ``Anyone with the link''
 2. In the settings, disable options for edit, download, etc.
