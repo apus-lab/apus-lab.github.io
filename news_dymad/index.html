@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Python package published - DyMAD | APUS Lab</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Python package published - DyMAD" />
+<meta name="author" content="Daning Huang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We have published the first software package from our lab, DyMAD. See Code and Documentation." />
+<meta property="og:description" content="We have published the first software package from our lab, DyMAD. See Code and Documentation." />
+<link rel="canonical" href="http://localhost:4000/news_dymad/" />
+<meta property="og:url" content="http://localhost:4000/news_dymad/" />
+<meta property="og:site_name" content="APUS Lab" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-11T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Python package published - DyMAD" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Daning Huang"},"dateModified":"2025-07-11T00:00:00-04:00","datePublished":"2025-07-11T00:00:00-04:00","description":"We have published the first software package from our lab, DyMAD. See Code and Documentation.","headline":"Python package published - DyMAD","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/news_dymad/"},"url":"http://localhost:4000/news_dymad/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                APUS Lab
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/team/" class="navbar-item ">Team</a>
+                    
+                
+                    
+                    <a href="/news/" class="navbar-item ">News</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/research/" class="navbar-link ">Research</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/research/projects/" class="navbar-item ">All Projects</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/publications/" class="navbar-item ">Publications</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/courses/" class="navbar-link ">Resources</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/courses/" class="navbar-item ">Courses</a>
+                            
+                            <a href="/minor/" class="navbar-item ">CSCI Minor</a>
+                            
+                            <a href="/software/" class="navbar-item ">Software</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/joinus/" class="navbar-item ">Join Us!</a>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Python package published - DyMAD</h1>
+            <p class="subtitle is-3">Dynamics Modeling and Analysis with Data</p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    <div class="content">
+
+    <p>Published: Jul 11, 2025 by Daning Huang</p>
+
+    
+
+    <p>We have published the first software package from our lab, DyMAD.  See <a href="https://github.com/apus-lab/dymad">Code</a> and <a href="https://dymad.readthedocs.io/">Documentation</a>.</p>
+
+<p><strong>Feel free to try it out, give feedback, and/or contribute!</strong></p>
+
+<p>DyMAD aims to provide a lightweight and user-friendly toolkit for modeling and analyzing dynamical systems using data-driven approaches.</p>
+
+<p>Currently, we have implemented the following features:</p>
+
+<ul>
+  <li>Data preprocessing pipeline specialized for time series data.</li>
+  <li>Models for different types of dynamical systems, including
+    <ul>
+      <li>Latent Dynamics Models</li>
+      <li>Koopman Bilinear Forms</li>
+      <li>The graph version of the above</li>
+    </ul>
+  </li>
+  <li>Training utilities, including
+    <ul>
+      <li>Neural-ODE-based optimizer</li>
+      <li>Weak-form optimizer</li>
+    </ul>
+  </li>
+  <li>Miscellaneous utilities, including
+    <ul>
+      <li>Samplers for inputs and initial conditions</li>
+      <li>Visualization tools</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The implemented and planned algorithms and features for DyMAD are mainly based on the <a href="/publications/">research work</a> from our lab.  The lead developer is Dr. Yin Yu, whose PhD thesis is on the topic of data-driven modeling of dynamical systems on graphs.</p>
+
+<p>It is still far from complete, see our <a href="https://dymad.readthedocs.io/en/latest/roadmap.html">Roadmap</a> for more details.</p>
+
+</div>
+
+<div class="tags">
+    
+      <span class="tag  is-secondary ">
+    <a href="/tagging/Publication">Publication</a>
+</span>
+    
+      <span class="tag  is-secondary ">
+    <a href="/tagging/Software">Software</a>
+</span>
+    
+</div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>
