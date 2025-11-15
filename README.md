@@ -11,11 +11,11 @@ The renaming of `_site` is because Jekyll dumps built files into this folder.
 The minimal steps to update are:
 + Build updated website by
 ```
-jekyll build
+bundle exec jekyll build
 ```
 + To check the website locally,
 ```
-jekyll serve
+bundle exec jekyll serve
 ```
 + cd to `_site` and push the changes
 ```
@@ -24,8 +24,6 @@ git commit -m "message"
 git push
 ```
 + In main repo push the changes.
-
-May need to prepend `bundle exec` to the `jekyll` commands to avoid package conflicts.
 
 For working with shared files from Google Drive.
 1. Enable access of ``Anyone with the link''
